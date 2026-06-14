@@ -3,28 +3,49 @@
 
 @import "minimal-mistakes";
 
-.archive {
+/* Container */
+
+.entries-grid {
   display: flex !important;
   flex-wrap: wrap !important;
   gap: 24px !important;
 }
 
+/* Card */
+
 .archive__item {
-  background: #f4f4f4 !important;
+  background: #f4f4f4;
 
-  border-radius: 12px !important;
+  border-radius: 12px;
 
-  padding: 20px !important;
+  padding: 20px;
 
-  width: 320px !important;
+  width: 320px;
 
-  box-shadow: 0 2px 10px rgba(0,0,0,.08) !important;
+  box-shadow: 0 3px 12px rgba(0,0,0,.08);
+
+  transition: all .15s ease;
+
+  height: 100%;
 }
 
 .archive__item:hover {
-  transform: translateY(-4px);
+  transform: translateY(-3px);
 }
 
+/* Cleanup */
+
 .archive__item-title {
-  margin-bottom: 12px;
+  margin-top: 0;
+}
+
+.archive__item-excerpt {
+  margin-top: 12px;
+}
+
+/* Remove weird spacing */
+
+.grid__item {
+  width: auto !important;
+  margin-bottom: 0 !important;
 }
