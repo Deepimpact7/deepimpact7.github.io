@@ -1,0 +1,30 @@
+.archive {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.archive__item {
+    background: #f4f4f4;
+    border-radius: 10px;
+    padding: 20px;
+
+    width: 300px;
+    min-height: 180px;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,.08);
+
+    transition: transform .15s ease;
+}
+
+.archive__item:hover {
+    transform: translateY(-4px);
+}
+
+.archive__item-title {
+    margin-bottom: 12px;
+}
+
+.archive__item-excerpt {
+    color: #555;
+}
