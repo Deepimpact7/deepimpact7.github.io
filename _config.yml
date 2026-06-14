@@ -15,3 +15,8 @@ defaults:
       type: projects
     values:
       layout: single
+
+minimal_mistakes_skin: default
+
+head_scripts:
+  - /assets/css/custom.css
