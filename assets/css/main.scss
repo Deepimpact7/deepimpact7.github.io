@@ -1,0 +1,30 @@
+---
+---
+
+@import "minimal-mistakes";
+
+.archive {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 24px !important;
+}
+
+.archive__item {
+  background: #f4f4f4 !important;
+
+  border-radius: 12px !important;
+
+  padding: 20px !important;
+
+  width: 320px !important;
+
+  box-shadow: 0 2px 10px rgba(0,0,0,.08) !important;
+}
+
+.archive__item:hover {
+  transform: translateY(-4px);
+}
+
+.archive__item-title {
+  margin-bottom: 12px;
+}
