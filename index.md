@@ -1,8 +1,11 @@
 ---
-title: "Projects"
 layout: archive
-entries_layout: grid
-collection: projects
+title: "Projects"
+permalink: /
+
+author_profile: false
 ---
 
-Welcome to my portfolio.
+{% assign projects = site.projects %}
+
+{% include documents-collection.html entries=projects type="grid" %}
