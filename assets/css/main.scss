@@ -3,15 +3,11 @@
 
 @import "minimal-mistakes";
 
-/* Container */
+/* Make each project a card */
 
-.entries-grid {
-  display: flex !important;
-  flex-wrap: wrap !important;
-  gap: 24px !important;
+.grid__item {
+  padding-right: 0 !important;
 }
-
-/* Card */
 
 .archive__item {
   background: #f4f4f4;
@@ -20,32 +16,41 @@
 
   padding: 20px;
 
-  width: 320px;
+  min-height: 220px;
 
-  box-shadow: 0 3px 12px rgba(0,0,0,.08);
+  box-shadow: 0 2px 8px rgba(0,0,0,.08);
 
-  transition: all .15s ease;
-
-  height: 100%;
+  overflow: hidden;
 }
-
-.archive__item:hover {
-  transform: translateY(-3px);
-}
-
-/* Cleanup */
 
 .archive__item-title {
   margin-top: 0;
 }
 
 .archive__item-excerpt {
-  margin-top: 12px;
+  margin-bottom: 0;
 }
 
-/* Remove weird spacing */
+/* Desktop: 3 cards */
 
-.grid__item {
-  width: auto !important;
-  margin-bottom: 0 !important;
+@media (min-width: 1024px) {
+  .grid__item {
+    width: 33.333% !important;
+  }
+}
+
+/* Tablet: 2 cards */
+
+@media (max-width: 1023px) {
+  .grid__item {
+    width: 50% !important;
+  }
+}
+
+/* Mobile: 1 card */
+
+@media (max-width: 640px) {
+  .grid__item {
+    width: 100% !important;
+  }
 }
